@@ -370,10 +370,15 @@
       const alertDiv = document.createElement('div');
       alertDiv.className = 'alert alert-success alert-dismissible fade show position-fixed';
       alertDiv.style.cssText = 'top: 20px; right: 20px; z-index: 1050; max-width: 400px;';
-      alertDiv.innerHTML = `
-        ${successMessage}
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-      `;
+      // Safely set text content to prevent XSS
+      alertDiv.textContent = successMessage;
+
+      // Add close button safely
+      const closeBtn = document.createElement('button');
+      closeBtn.type = 'button';
+      closeBtn.className = 'btn-close';
+      closeBtn.setAttribute('data-bs-dismiss', 'alert');
+      alertDiv.appendChild(closeBtn);
       document.body.appendChild(alertDiv);
       
       // Clean URL
