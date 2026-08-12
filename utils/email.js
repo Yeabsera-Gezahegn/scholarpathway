@@ -31,11 +31,12 @@ async function sendEmail({ to, subject, html, text }) {
       
       if (!res.ok) {
         const errorText = await res.text().catch(() => '');
-        console.error(`❌ Resend API failed: ${res.status} ${res.statusText}`);
-        console.error(`❌ Error details:`, errorText);
-        console.error(`❌ Attempted to send to: ${to}`);
-        console.error(`❌ From address: ${EMAIL_FROM}`);
-        
+        // ✅ AFTER (Safe and Clears CodeQL Alert):
+        console.error('❌ Resend API failed: %s %s', res.status, res.statusText);
+        console.error('❌ Error details: %s', errorText);
+        console.error('❌ Attempted to send to: %s', to);
+        console.error('❌ From address: %s', EMAIL_FROM);
+                
         // If it's a domain verification or sandbox issue, show specific message
         if (errorText.includes('domain') || errorText.includes('verify') || errorText.includes('sandbox')) {
           console.error('🚨 DOMAIN ISSUE: Your Resend account may need domain verification or is in sandbox mode');
