@@ -27,6 +27,9 @@
     "morgan": "^1.10.0",
     "sanitize-html": "^2.13.0",
     "slugify": "^1.6.6",
+ dependabot/npm_and_yarn/npm_and_yarn-228bf9d65d
+    "uuid": "^14.0.0"
+
     "uuid": "^14.0.1"
   }
 }
