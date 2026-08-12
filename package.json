@@ -12,22 +12,47 @@
     "seed": "node tools/seed.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.48.1",
-    "bcryptjs": "^2.4.3",
+    "@supabase/supabase-js": "^2.112.2",
+    "bcryptjs": "^3.0.3",
     "compression": "^1.7.4",
     "cookie-session": "^2.0.0",
     "csurf": "^1.11.0",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.21",
+ dependabot/npm_and_yarn/npm_and_yarn-183940b132
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
+ dependabot/npm_and_yarn/npm_and_yarn-228bf9d65d
+    "express": "^4.22.1",
+
+    "express": "^5.2.1",
     "express-ejs-layouts": "^2.5.1",
     "express-rate-limit": "^7.4.0",
+ dependabot/npm_and_yarn/npm_and_yarn-cab25fcd96
     "express-validator": "^7.3.0",
+
+    "express-validator": "^7.3.2",
     "helmet": "^7.1.0",
     "method-override": "^3.0.0",
-    "morgan": "^1.10.0",
-    "sanitize-html": "^2.13.0",
+    "morgan": "^1.11.0",
+    "sanitize-html": "^2.17.5",
     "slugify": "^1.6.6",
-    "uuid": "^9.0.1"
+    "uuid": "^14.0.0"
+ dependabot/npm_and_yarn/npm_and_yarn-228bf9d65d
+
+dependabot/npm_and_yarn/npm_and_yarn-adc2392a40
+
+
+    "ejs": "^6.0.1",
+    "express": "^5.2.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-rate-limit": "^8.6.2",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.11.0",
+    "sanitize-html": "^2.17.6",
+    "slugify": "^1.6.9",
+    "uuid": "^14.0.1"
+
+
   }
 }
