@@ -26,6 +26,9 @@
     "express": "^5.2.1",
     "express-ejs-layouts": "^2.5.1",
     "express-rate-limit": "^7.4.0",
+ dependabot/npm_and_yarn/npm_and_yarn-cab25fcd96
+    "express-validator": "^7.3.0",
+
     "express-validator": "^7.3.2",
     "helmet": "^7.1.0",
     "method-override": "^3.0.0",
