@@ -47,7 +47,7 @@ async function sendEmail({ to, subject, html, text }) {
       }
       
       const result = await res.json();
-      console.log(`✅ Email sent via Resend to ${to}:`, result.id);
+      console.log('✅ Email sent via Resend to %s: %s', to, result.id);
       return result;
     } catch (error) {
       console.error('❌ Resend API error:', error.message);
